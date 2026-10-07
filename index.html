@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#fff8f4">
+<title>Devansh & Himanshi — Engagement</title>
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;width:100%;height:100%;overflow:hidden}
+body{background:#160d12;color:#29181d;font-family:Georgia,"Times New Roman",serif}
+.page{position:relative;width:100%;height:100svh;overflow:hidden;background:#fff8f4}
+.bg{position:absolute;inset:0;background:
+linear-gradient(135deg,rgba(255,248,244,.72),rgba(255,248,244,.9)),
+url("invitation-background.png") center/cover;transform:scale(1.04);
+animation:bgZoom 18s ease-in-out infinite alternate}
+.overlay{position:absolute;inset:0;background:radial-gradient(circle at 50% 42%,transparent 0 24%,rgba(255,248,244,.15) 60%,rgba(255,248,244,.4));pointer-events:none}
+.content{position:absolute;inset:0;z-index:5;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:28px 22px}
+.kicker{font:700 10px/1.4 Arial,sans-serif;letter-spacing:4px;color:#7a5a25;animation:fadeUp 1.2s both}
+.ring{font-size:55px;filter:drop-shadow(0 8px 10px #8e164422);animation:ringFloat 3s ease-in-out infinite,fadeUp 1s .15s both}
+h1{margin:8px 0 2px;font-size:clamp(50px,15vw,76px);line-height:.86;font-style:italic;font-weight:500;color:#8e1644;text-shadow:0 3px 18px #8e164422;animation:nameIn 1.2s .25s both}
+.amp{font-size:28px;color:#b58428;margin:7px 0;animation:fadeUp 1s .4s both}
+.line{height:1px;width:min(330px,80vw);background:linear-gradient(90deg,transparent,#b58428,transparent);margin:18px auto;animation:lineIn 1.2s .5s both}
+.message{font-size:15px;line-height:1.65;max-width:360px;animation:fadeUp 1s .65s both}
+.date{margin-top:18px;color:#8e1644;font-weight:bold;font-size:28px;animation:fadeUp 1s .8s both}
+.date small{display:block;font:700 10px Arial;letter-spacing:3px;color:#6f555c;margin-top:5px}
+.time{font:700 15px Arial;color:#514248;margin-top:8px;animation:fadeUp 1s .9s both}
+.buttons{display:flex;flex-wrap:wrap;justify-content:center;gap:9px;margin-top:20px;animation:fadeUp 1s 1s both}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:11px 15px;border-radius:999px;text-decoration:none;color:white;background:linear-gradient(135deg,#9c174c,#711033);font:700 12px Arial,sans-serif;box-shadow:0 8px 24px #74103325;transition:transform .25s,box-shadow .25s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 12px 30px #74103335}
+.btn.gold{background:linear-gradient(135deg,#c99b42,#936518)}
+.petal,.spark{position:absolute;z-index:2;pointer-events:none}
+.petal{width:9px;height:14px;background:#c98a9f;border-radius:70% 30% 70% 30%;opacity:.45;animation:fall linear infinite}
+.p1{left:8%;animation-duration:8s}.p2{left:28%;animation-duration:11s;animation-delay:2s}.p3{left:62%;animation-duration:9s;animation-delay:1s}.p4{left:85%;animation-duration:12s;animation-delay:4s}.p5{left:48%;animation-duration:10s;animation-delay:5s}
+.spark{width:5px;height:5px;border-radius:50%;background:#cda34d;opacity:.65;animation:spark 5s linear infinite}
+.s1{left:18%;animation-delay:1s}.s2{left:76%;animation-delay:2.4s}.s3{left:48%;animation-delay:3.1s}.s4{left:91%;animation-delay:.7s}
+.corner{position:absolute;z-index:3;width:130px;height:130px;border:1px solid rgba(181,132,40,.5);opacity:.65}
+.tl{top:14px;left:14px;border-right:0;border-bottom:0;border-radius:18px 0 0 0}
+.br{right:14px;bottom:14px;border-left:0;border-top:0;border-radius:0 0 18px 0}
+.hint{position:absolute;bottom:13px;left:0;right:0;z-index:6;text-align:center;font:9px Arial;letter-spacing:2px;color:#80666c;opacity:.8;animation:pulse 2s infinite}
+@keyframes bgZoom{from{transform:scale(1.04)}to{transform:scale(1.12)}}
+@keyframes ringFloat{50%{transform:translateY(-8px) rotate(-3deg)}}
+@keyframes nameIn{from{opacity:0;transform:translateY(28px) scale(.94)}to{opacity:1;transform:none}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@keyframes lineIn{from{opacity:0;width:0}to{opacity:1;width:min(330px,80vw)}}
+@keyframes fall{0%{transform:translateY(-15vh) rotate(0);opacity:0}15%{opacity:.5}100%{transform:translateY(115vh) rotate(280deg);opacity:0}}
+@keyframes spark{0%{transform:translateY(110vh);opacity:0}25%,75%{opacity:.8}100%{transform:translateY(-10vh);opacity:0}}
+@keyframes pulse{50%{opacity:.35}}
+@media(max-height:680px){.ring{font-size:40px}h1{font-size:50px}.line{margin:10px auto}.message{font-size:13px}.date{margin-top:10px}.buttons{margin-top:12px}.btn{padding:9px 12px}}
+</style>
+</head>
+<body>
+<div class="page">
+<div class="bg"></div><div class="overlay"></div>
+<div class="corner tl"></div><div class="corner br"></div>
+<div class="petal p1"></div><div class="petal p2"></div><div class="petal p3"></div><div class="petal p4"></div><div class="petal p5"></div>
+<div class="spark s1"></div><div class="spark s2"></div><div class="spark s3"></div><div class="spark s4"></div>
+
+<main class="content">
+<div class="kicker">YOU ARE INVITED • ENGAGEMENT CEREMONY</div>
+<div class="ring">💍</div>
+<h1>Devansh</h1>
+<div class="amp">&amp;</div>
+<h1>Himanshi</h1>
+<div class="line"></div>
+<div class="message">Two souls, one heart.<br>Join us as we celebrate love, laughter,<br>and the beginning of our forever.</div>
+<div class="date">25<small>OCTOBER 2026 • SUNDAY</small></div>
+<div class="time">05:00 PM</div>
+<div class="buttons">
+<a class="btn gold" target="_blank" href="https://www.google.com/maps/search/?api=1&query=M.B+Resort+Lahaurgarh+Meerut+Baraut+Road+Meerut+250502">📍 Location</a>
+<a class="btn" href="https://wa.me/919235881410?text=Hi!%20I%20would%20love%20to%20RSVP%20for%20Devansh%20%26%20Himanshi%27s%20engagement.">💌 RSVP</a>
+<a class="btn" href="tel:+919235881410">☎ Contact</a>
+<a class="btn" href="https://wa.me/917704055568?text=Hi!%20Regarding%20Devansh%20%26%20Himanshi%27s%20engagement.">💬 WhatsApp</a>
+</div>
+</main>
+<div class="hint">TAP A BUTTON • NO SCROLL NEEDED</div>
+</div>
+</body>
+</html>
