@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f7eee8">
+<title>Devansh & Himanshi — Engagement</title>
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;width:100%;height:100%;overflow:hidden}
+body{background:#180d12;color:#2c1b20;font-family:Georgia,"Times New Roman",serif}
+.page{position:relative;width:100%;height:100svh;overflow:hidden;background:#f8eee8}
+.bg{position:absolute;inset:-3%;background:
+linear-gradient(135deg,rgba(248,238,232,.18),rgba(248,238,232,.42)),
+url("invitation-background.png") center/cover;animation:bgMove 20s ease-in-out infinite alternate}
+.veil{position:absolute;inset:0;background:radial-gradient(circle at 50% 45%,rgba(255,255,255,.04),rgba(255,248,244,.22) 75%);pointer-events:none}
+.content{position:absolute;inset:0;z-index:5;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:20px 20px 28px}
+.kicker{font:700 9px/1.4 Arial,sans-serif;letter-spacing:4px;color:#765629;animation:up .9s both}
+.ring{font-size:53px;line-height:1;margin:8px 0 4px;filter:drop-shadow(0 4px 10px #8e164440);animation:ring 3s ease-in-out infinite,up 1s .1s both}
+h1{margin:3px 0;font-size:clamp(49px,14vw,72px);line-height:.86;font-style:italic;font-weight:500;color:#861441;text-shadow:0 2px 18px #86144125;animation:name 1.15s .15s both}
+.amp{font-size:25px;color:#b58a35;margin:5px 0;animation:up .9s .35s both}
+.ornament{display:flex;align-items:center;gap:9px;width:min(350px,84vw);margin:12px auto 13px;color:#b58a35;animation:up .9s .4s both}
+.ornament:before,.ornament:after{content:"";height:1px;flex:1;background:linear-gradient(90deg,transparent,#b58a35)}
+.ornament:after{background:linear-gradient(90deg,#b58a35,transparent)}
+.ornament span{font-size:12px}
+.tagline{font-size:15px;line-height:1.55;max-width:350px;color:#59444a;animation:up .9s .5s both}
+.date{margin-top:13px;font-size:27px;color:#861441;font-weight:bold;animation:up .9s .65s both}
+.date small{display:block;margin-top:4px;font:700 9px Arial;letter-spacing:3px;color:#6f5a60}
+.time{margin-top:5px;font:700 13px Arial;letter-spacing:1px;color:#57464a;animation:up .9s .72s both}
+.buttons{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;max-width:390px;margin-top:15px;animation:up .9s .82s both}
+.btn{border:0;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;padding:10px 14px;border-radius:999px;text-decoration:none;color:#fff;background:linear-gradient(135deg,#a31b51,#731039);font:700 11px Arial,sans-serif;box-shadow:0 7px 20px #73103930;transition:transform .25s,box-shadow .25s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 11px 28px #73103940}
+.btn.gold{background:linear-gradient(135deg,#d0a44d,#956a1e)}
+.petal,.spark{position:absolute;z-index:2;pointer-events:none}
+.petal{width:9px;height:14px;background:#c77892;border-radius:70% 30% 70% 30%;opacity:.6;animation:fall linear infinite}
+.p1{left:7%;animation-duration:8s}.p2{left:25%;animation-duration:10s;animation-delay:1.4s}.p3{left:57%;animation-duration:9s;animation-delay:2s}.p4{left:83%;animation-duration:11s;animation-delay:3.2s}.p5{left:43%;animation-duration:12s;animation-delay:4.5s}
+.spark{width:4px;height:4px;border-radius:50%;background:#cda34d;opacity:.8;animation:spark 4.5s linear infinite}
+.s1{left:18%;animation-delay:1s}.s2{left:73%;animation-delay:2.2s}.s3{left:49%;animation-delay:3s}.s4{left:90%;animation-delay:.5s}
+.frame{position:absolute;z-index:3;inset:14px;border:1px solid rgba(173,128,48,.52);pointer-events:none}
+.frame:before,.frame:after{content:"";position:absolute;width:78px;height:78px;border:1px solid rgba(173,128,48,.6)}
+.frame:before{top:-1px;left:-1px;border-right:0;border-bottom:0;border-radius:18px 0 0 0}
+.frame:after{right:-1px;bottom:-1px;border-left:0;border-top:0;border-radius:0 0 18px 0}
+.hint{position:absolute;bottom:8px;left:0;right:0;z-index:6;text-align:center;font:8px Arial;letter-spacing:2px;color:#7e686d;opacity:.65}
+@keyframes bgMove{from{transform:scale(1.02) translate3d(-.4%,0,0)}to{transform:scale(1.10) translate3d(.4%,-.5%,0)}}
+@keyframes ring{50%{transform:translateY(-7px) rotate(-3deg)}}
+@keyframes up{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+@keyframes name{from{opacity:0;transform:translateY(24px) scale(.95)}to{opacity:1;transform:none}}
+@keyframes fall{0%{transform:translateY(-15vh) rotate(0);opacity:0}15%{opacity:.65}100%{transform:translateY(115vh) rotate(300deg);opacity:0}}
+@keyframes spark{0%{transform:translateY(110vh);opacity:0}30%,70%{opacity:.9}100%{transform:translateY(-10vh);opacity:0}}
+@media(max-height:690px){.ring{font-size:42px;margin:3px}.kicker{font-size:8px}h1{font-size:50px}.ornament{margin:8px auto}.tagline{font-size:13px}.date{margin-top:8px}.buttons{margin-top:10px}.btn{padding:8px 11px}.hint{display:none}}
+</style>
+</head>
+<body>
+<div class="page">
+<div class="bg"></div><div class="veil"></div><div class="frame"></div>
+<div class="petal p1"></div><div class="petal p2"></div><div class="petal p3"></div><div class="petal p4"></div><div class="petal p5"></div>
+<div class="spark s1"></div><div class="spark s2"></div><div class="spark s3"></div><div class="spark s4"></div>
+
+<main class="content">
+<div class="kicker">YOU ARE INVITED • ENGAGEMENT CEREMONY</div>
+<div class="ring">💍</div>
+<h1>Devansh</h1>
+<div class="amp">&amp;</div>
+<h1>Himanshi</h1>
+<div class="ornament"><span>✦</span></div>
+<div class="tagline">A beautiful beginning, shared with those we cherish.</div>
+<div class="date">25<small>OCTOBER 2026 • SUNDAY</small></div>
+<div class="time">05:00 PM</div>
+<div class="buttons">
+<a class="btn gold" data-track="location" target="_blank" href="https://www.google.com/maps/search/?api=1&query=M.B+Resort+Lahaurgarh+Meerut+Baraut+Road+Meerut+250502">📍 Location</a>
+<a class="btn" data-track="rsvp" href="https://wa.me/919235881410?text=Hi!%20I%20would%20love%20to%20RSVP%20for%20Devansh%20%26%20Himanshi%27s%20engagement.">💌 RSVP</a>
+<a class="btn" data-track="contact" href="tel:+919235881410">☎ Contact</a>
+<a class="btn" data-track="whatsapp" href="https://wa.me/917704055568?text=Hi!%20Regarding%20Devansh%20%26%20Himanshi%27s%20engagement.">💬 WhatsApp</a>
+</div>
+</main>
+<div class="hint">TAP A BUTTON • NO SCROLL NEEDED</div>
+</div>
+
+<script>
+// Optional guest tracking.
+// Paste your Google Apps Script Web App URL below after deployment.
+// This records anonymous page/button events unless you enable the name prompt.
+const TRACKING_URL = "";
+const GUEST_NAME_KEY = "devansh_himanshi_guest_name";
+
+function track(eventName){
+  if(!TRACKING_URL) return;
+  const guest = localStorage.getItem(GUEST_NAME_KEY) || "";
+  const url = TRACKING_URL + "?event=" + encodeURIComponent(eventName) +
+              "&guest=" + encodeURIComponent(guest) +
+              "&page=" + encodeURIComponent(location.href);
+  try { fetch(url, {mode:"no-cors", keepalive:true}); } catch(e){}
+}
+track("page_view");
+document.querySelectorAll("[data-track]").forEach(el=>{
+  el.addEventListener("click",()=>track(el.dataset.track));
+});
+</script>
+</body>
+</html>
